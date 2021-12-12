@@ -148,6 +148,9 @@ button img {
     text-decoration: none;
     color: black;
 }
+#index .card {
+    cursor: pointer;
+}
 .card-main {
     padding: 21px 24px 25px;
 }
@@ -386,6 +389,9 @@ button img {
     margin-left: 5px;
 }
 .modal-close {
+    display: none;
+}
+.not--active {
     display: none;
 }
 
