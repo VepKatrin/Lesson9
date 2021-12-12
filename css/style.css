@@ -287,7 +287,7 @@ button img {
     justify-content: center;
     align-items: center;
     width:  100%;
-    height: 100vh;
+    height: 100%;
     background:rgba(0, 0, 0, 0.5);
 }
 .modal-window {
@@ -387,4 +387,143 @@ button img {
 }
 .modal-close {
     display: none;
+}
+
+@media (max-width: 1240px) {
+    .container {
+        width: 95%;
+    }
+    .logo-link {
+        display: none;
+    }
+    .cards {
+        justify-content: space-around;
+    }
+    .card {
+        max-width: 40%;
+    }
+    .card-img img {
+        width: 100%;
+    }
+}
+
+@media (max-width: 980px) {
+    .header__buttons {
+        display: none;
+    }
+    .header .logo-link {
+        display: block;
+        order: 1;
+    }
+    .address-input {
+        width: 75%;
+    }
+    .promo-block {
+        background: #FFF1B8;
+    }
+    .card-img img {
+        max-width: 384px;
+    }
+}
+
+@media (max-width: 860px) {
+    .card {
+        max-width: 300px;
+    }
+    .modal-window {
+        width: 95%;
+    }
+}
+
+@media (max-width: 680px) {
+    .block__header {
+        flex-wrap: wrap;
+    }
+    
+    .address-input {
+        width: 100%;
+        order: 1;
+    }
+    
+    .header__buttons {
+        display: flex;
+        margin-bottom: 20px;
+    }
+
+    .header .logo-link {
+        order: 0;
+        margin-bottom: 20px;
+    }
+    .block__footer {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    .cards {
+        flex-direction: column;
+        max-width: 100%;
+    }
+    .footer-block {
+        justify-content: center;
+        margin-bottom: 20px;
+    }
+    .social-block {
+        justify-content: center;
+    }
+    .footer {
+        padding: 20px 0;
+    }
+    .section-promo {
+        display: none;
+    }
+}
+@media (max-width: 550px) {
+    .section__header {
+        flex-direction: column;
+    }
+    .row-right {
+        max-width: 35%;
+    }
+    .counter {
+        display: flex;
+        flex-direction: column-reverse;
+    }
+    .item-price {
+        display: flex;
+        flex-direction: column;
+    }
+    .modal-window {
+        padding: 8px 16px;
+    }
+    .modal-footer {
+        flex-direction: column;
+        margin-top: 8px;
+    }
+    .total {
+        margin-bottom: 10px;
+    }
+    .modal-header {
+        margin-bottom: 8px;
+        margin-top: 8px;
+    }
+}
+
+@media (max-width: 480px) {
+    .address-input {
+        width: 100%;
+        order: 1;
+    }
+    
+    .header__buttons {
+        display: flex;
+        margin-bottom: 20px;
+    }
+
+    .header .logo-link {
+        order: 0;
+        margin-bottom: 20px;
+    }
+    .navigation {
+        flex-direction: column;
+        align-items: center;
+    }
 }
